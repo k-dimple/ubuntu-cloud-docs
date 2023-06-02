@@ -6,4 +6,3 @@ furo
 sphinx-tabs
 sphinx-reredirects
 pyspelling
-sphinx-multiproject
