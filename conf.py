@@ -92,4 +92,6 @@ html_css_files = [
 
 # Set up redirects (https://documatt.gitlab.io/sphinx-reredirects/usage.html)
 # For example: "explanation/old-name.html": "../how-to/prettify.html",
-redirects = {}
+redirects = {
+    "https://canonical-public-cloud.readthedocs-hosted.com/en/latest/oci/": "https://canonical-oci.readthedocs-hosted.com/en/latest/"
+}
