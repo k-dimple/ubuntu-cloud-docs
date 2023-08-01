@@ -1,5 +1,6 @@
 Build an Ubuntu Pro container image
-============================
+===================================
+
 Similarly to the `Ubuntu Pro images in Public Clouds <https://canonical-ubuntu-pro-client.readthedocs-hosted.com/en/latest/explanations/what_are_ubuntu_pro_cloud_instances.html>`_, one can also build an Ubuntu Pro container image to leverage from familiar Ubuntu Pro services like ESM (Extended Security Maintenance) and FIPS.
 
 .. note::

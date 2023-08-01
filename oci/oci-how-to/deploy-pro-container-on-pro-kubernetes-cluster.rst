@@ -30,12 +30,12 @@ Deploy Pro Kubernetes clusters
 
 	.. tab:: EKS
 
-		Please see :doc:`here </aws/eks/eks-how-to/deploy-ubuntu-pro-cluster>` to learn
+		Please see :doc:` Deploy an Ubuntu Pro EKS cluster </aws/eks/eks-how-to/deploy-ubuntu-pro-cluster>` to learn
 		how to deploy an Ubuntu Pro Kubernetes cluster on Elastic Kubernetes Service (EKS).
 
 	.. tab:: GCE
 
-		Please see :doc:`here </google/gce/gce-how-to/deploy-kubernetes-with-ubuntu-pro>` to learn
+		Please see :doc:` Deploy Kubernetes with Ubuntu Pro on GCE </google/gce/gce-how-to/deploy-kubernetes-with-ubuntu-pro>` to learn
 		how to deploy an Ubuntu Pro Kubernetes cluster on Google Compute Engine (GCE).
 
 	.. tab:: OpenShift
@@ -56,7 +56,7 @@ Deploy Pro Kubernetes clusters
 
 		**Get an Ubuntu Pro subscription**
 
-		You can reach out `here <https://ubuntu.com/support/contact-us?product=contextual-footer-ua>`_
+		You can `reach out to us <https://ubuntu.com/support/contact-us?product=contextual-footer-ua>`_
 		to attach the cluster nodes to an Ubuntu Pro subscription, or contact
 		`rocks@canonical.com <mailto:rocks@canonical.com>`_ if you need additional support.
 
@@ -74,9 +74,9 @@ Deploy Pro Kubernetes clusters
 		**Get an Ubuntu Pro subscription**
 
 		If the resulting Kubernetes cluster is composed of Ubuntu nodes, you must attach them
-		to a Pro subscription as described in `here <https://ubuntu.com/pro/tutorial>`_. Otherwise,
-		if the Kubernetes cluster is not running on Ubuntu nodes, you can reach out
-		`here <https://ubuntu.com/support/contact-us?product=contextual-footer-ua>`_
+		to a Pro subscription as described in `this tutorial <https://ubuntu.com/pro/tutorial>`_. Otherwise,
+		if the Kubernetes cluster is not running on Ubuntu nodes, you can 
+		`contact us <https://ubuntu.com/support/contact-us?product=contextual-footer-ua>`_
 		to attach the nodes to an Ubuntu Pro subscription, or contact
 		`rocks@canonical.com <mailto:rocks@canonical.com>`_ if you need additional support.
 
@@ -116,6 +116,7 @@ Deploy Pro Kubernetes clusters
 		Ubuntu Pro Kubernetes cluster running on Nutanix.
 
 .. _create-k8s-secret:
+
 Create a Secret for Private Registry
 ------------------------------------
 

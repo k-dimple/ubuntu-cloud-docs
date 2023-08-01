@@ -93,7 +93,55 @@ html_css_files = [
 # Set up redirects (https://documatt.gitlab.io/sphinx-reredirects/usage.html)
 # For example: "explanation/old-name.html": "../how-to/prettify.html",
 redirects = {
-    "oci/index.": "https://canonical-oci.readthedocs-hosted.com/en/latest/",
-    "oci/oci-how-to/create-chiselled-ubuntu-image": "https://canonical-oci.readthedocs-hosted.com/en/latest/oci-how-to/create-chiselled-ubuntu-image/",
-    "oci/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster.rst": "https://canonical-oci.readthedocs-hosted.com/en/latest/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster/"
+    "aws/index": 
+        "https://canonical-aws.readthedocs-hosted.com/en/latest/",
+    "aws/ec2/ec2-how-to/find-ubuntu-images": 
+        "https://canonical-aws.readthedocs-hosted.com/en/latest/aws-how-to/find-ubuntu-images/",
+    "aws/ec2/ec2-how-to/upgrade-from-focal-to-jammy": 
+        "https://canonical-aws.readthedocs-hosted.com/en/latest/aws-how-to/upgrade-from-focal-to-jammy/",
+    "aws/eks/eks-how-to/deploy-ubuntu-pro-cluster": 
+        "https://canonical-aws.readthedocs-hosted.com/en/latest/aws-how-to/deploy-ubuntu-pro-cluster/",
+    "aws/eks/eks-reference/image-retention-policy": 
+        "https://canonical-aws.readthedocs-hosted.com/en/latest/#eks-image-retention-policy",
+
+    "azure/index": 
+        "https://canonical-azure.readthedocs-hosted.com/en/latest/",
+    "azure/azure-how-to/find-ubuntu-images": 
+        "https://canonical-azure.readthedocs-hosted.com/en/latest/azure-how-to/find-ubuntu-images/",
+    "azure/azure-how-to/get-ubuntu-pro": 
+        "https://canonical-azure.readthedocs-hosted.com/en/latest/azure-how-to/get-ubuntu-pro/",
+    "azure/azure-how-to/install-azure-cli": 
+        "https://canonical-azure.readthedocs-hosted.com/en/latest/azure-how-to/install-azure-cli/",
+    "azure/azure-how-to/upgrade-from-focal-to-jammy": 
+        "https://canonical-azure.readthedocs-hosted.com/en/latest/azure-how-to/upgrade-from-focal-to-jammy/",
+    "azure/azure-reference/azure-security": 
+        "https://canonical-azure.readthedocs-hosted.com/en/latest/#about-security-on-azure",
+    "azure/azure-explanation/faq": 
+        "https://canonical-azure.readthedocs-hosted.com/en/latest/#understanding-ubuntu-on-azure",
+
+    "google/index": 
+        "https://canonical-gcp.readthedocs-hosted.com/en/latest/",
+    "google/gce/gce-how-to/deploy-kubernetes-with-ubuntu-pro": 
+        "https://canonical-gcp.readthedocs-hosted.com/en/latest/google-how-to/deploy-kubernetes-with-ubuntu-pro/",
+    "google/gce/gce-how-to/upgrade-from-focal-to-jammy": 
+        "https://canonical-gcp.readthedocs-hosted.com/en/latest/google-how-to/upgrade-from-focal-to-jammy/",
+
+    "ibm/index": 
+        "https://canonical-ibm.readthedocs-hosted.com/en/latest/",
+    "ibm/ibm-vpc/ibm-vpc-how-to/upgrade-from-focal-to-jammy": 
+        "https://canonical-ibm.readthedocs-hosted.com/en/latest/ibm-how-to/upgrade-from-focal-to-jammy/",
+
+    "oci/index": 
+        "https://canonical-oci.readthedocs-hosted.com/en/latest/",
+    "oci/oci-how-to/build-ubuntu-pro-container-image":
+        "https://canonical-oci.readthedocs-hosted.com/en/latest/#building-ubuntu-pro-oci-images",
+    "oci/oci-how-to/create-chiselled-ubuntu-image": 
+        "https://canonical-oci.readthedocs-hosted.com/en/latest/oci-how-to/create-chiselled-ubuntu-image/",
+    "oci/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster": 
+        "https://canonical-oci.readthedocs-hosted.com/en/latest/oci-how-to/deploy-pro-container-on-pro-kubernetes-cluster/",
+
+    "oracle/index": 
+        "https://canonical-oracle.readthedocs-hosted.com/en/latest/",
+    "oracle/oracle-how-to/upgrade-from-focal-to-jammy": 
+        "https://canonical-oracle.readthedocs-hosted.com/en/latest/oracle-how-to/upgrade-from-focal-to-jammy/"
 }
