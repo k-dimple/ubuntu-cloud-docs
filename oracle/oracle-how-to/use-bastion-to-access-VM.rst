@@ -1,9 +1,9 @@
 Use a bastion to access your VM
-=============================== 
+===============================
 
-To increase security and avoid Internet based attacks, it might make sense to run your VMs without a public IP address and just use a private IP instead. The only way to access such a VM will be through your private network in the Oracle Cloud VNC (Virtual Cloud Network).
+To increase security and avoid Internet based attacks, it might make sense to run your VMs without a public IP address and just use a private IP instead. The only way to access such a VM will be through your private network in the Oracle Cloud VCN (Virtual Cloud Network).
 
-`Oracle's bastion feature`_ provides a time-limited access to VMs that do not have a public endpoint. Bastions control authorised users and allow them to SSH into a VM from specific IP addresses. It also negates the need to maintain an instance with a public and private address to act as a bastion (which in turn runs the risk of Internet exposure).
+`Oracle's bastion feature`_ provides time-limited access to VMs that do not have a public endpoint. It enables you to create a bastion - that controls authorised users and allows them to SSH into a VM from specific IP addresses. The feature also negates the need to maintain an instance with a public and private address to act as a bastion (which in turn runs the risk of Internet exposure).
 
 Prerequisites
 -------------
@@ -144,9 +144,9 @@ You can create the bastion using either the console or the CLI.
 
     .. group-tab:: Using console
 
-        Go to :guilabel:`Identity & Security` > :guilabel:`Bastion` and select :guilabel:`Create bastion`. Provide a name and select the network and subnet where the bastion should be created.
+        Go to :guilabel:`Identity & Security` > :guilabel:`Bastion` and select :guilabel:`Create bastion`. Provide a name and select the VCN and subnet where the bastion should be created.
 
-        Under ``CIDR block allowlist``, specify the network range from which you want to provide access to your bastion. For instance, you can restrict the bastion access to only valid IP addresses that your ISP assigns to you, so that it would be accessible only from your network. Note that currently, only IPv4 ranges are allowed.
+        Under ``CIDR block allowlist``, specify the network address range from which you want to provide access to your bastion. For instance, you can restrict the bastion access to only valid IP addresses that your ISP assigns to you, so that it would be accessible only from your network. Note that currently, only IPv4 ranges are allowed.
 
         If you want a less secure approach, you can let the bastion be accessed by any address, as in the example below:
 
