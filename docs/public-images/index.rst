@@ -25,7 +25,7 @@ In this documentation
     :header-rows: 0
 
     * - **Canonical's offerings**
-      - :ref:`Ubuntu cloud image artifacts <uci-artifacts>` • :ref:`LXD and OpenStack images <lxd-openstack-images>` • :ref:`Vagrant boxes <vagrant-explanation>` • :ref:`Buildd images <buildd>` 
+      - :ref:`Ubuntu cloud image artifacts <uci-artifacts>` • :ref:`LXD and OpenStack images <lxd-openstack-images>` • :ref:`Vagrant boxes <vagrant-explanation>` • :ref:`Buildd images <buildd>` • :ref:`Support options <support>` 
       
     * - **Building and launching images**
       - :ref:`Build a Vagrant box with Bartender <vagrant-bartender>` • :ref:`Run a Vagrant box <run-a-vagrant-box>` • :ref:`Launch QCOW images using libvirt <launch-libvirt>` • :ref:`Launch QCOW images using QEMU <qcow-qemu>`  • :ref:`Run an OVA using VirtualBox <run-an-ova-using-virtualbox>`  • :ref:`Create and use a local cloud-init datasource <use-local-cloud-init-ds>`  • :ref:`Verify an image checksum <verify-image-checksum>` 
@@ -71,6 +71,7 @@ Governance and policies
    public-images-how-to/index
    public-images-explanation/index
    public-images-reference/artifacts
+   public-images-reference/support
    public-images-how-to/contribute-to-these-docs
 
 .. _Get support: https://ubuntu.com/cloud/public-cloud
