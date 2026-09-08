@@ -11,6 +11,21 @@ This document provides detailed information on various Ubuntu cloud image artifa
 
   If you are looking for Ubuntu images to use on the major public clouds, their documentation can be found at: :ref:`Ubuntu on AWS <aws:index>`, :ref:`Ubuntu on Azure <azure:index>`, :ref:`Ubuntu on GCP <google:index>`, :ref:`Ubuntu on IBM <ibm:index>` and :ref:`Ubuntu on Oracle <oracle:index>`.
 
+Locating image artifacts
+-------------------------
+`Simplestreams`_ is the format and tooling used to publish and mirror Ubuntu cloud image
+artifacts and their metadata, such as those listed on `cloud-images.ubuntu.com`_. As an alternative
+to browsing the site manually, you can use the Simplestreams client to programmatically query
+and filter available images by attributes such as release, architecture and serial. For
+example, to query all images on the release stream (this operation takes long to complete):
+
+.. code-block:: bash
+
+    sudo snap install simplestreams
+    simplestreams.sstream-query http://cloud-images.ubuntu.com/releases/
+
+See the `Simplestreams documentation`_ for detailed installation instructions and further query examples.
+
 Images
 ------
 This section contains information on all of the Ubuntu cloud images available for download. These images are pre-configured and ready for deployment in cloud environments, supporting multiple architectures and configurations.
@@ -549,3 +564,8 @@ Manifests
             appstream    1.0.2-1build6
             apt    2.7.14build2
             ...
+
+.. _`Simplestreams`: https://canonical-simplestreams.readthedocs-hosted.com/en/latest/
+.. _`Simplestreams documentation`: https://canonical-simplestreams.readthedocs-hosted.com/en/latest/
+.. _`cloud-images.ubuntu.com`: https://cloud-images.ubuntu.com/
+
