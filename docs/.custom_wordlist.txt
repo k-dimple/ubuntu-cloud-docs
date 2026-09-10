@@ -253,10 +253,12 @@ MicroK
 microservices
 minimalistic
 misconfigurations
+mkdiff
 MLflow
 MLOps
 mssql
 mTLS
+multiline
 Multipass
 MyST
 namespace

@@ -549,20 +549,28 @@ Manifests
    * - Example filename
      - ``noble-server-cloudimg-amd64-root.manifest``
    * - Format description
-     - Lists of packages included in various images.
+     - A multiline file representing the packages included in the image.
+       Each line contains a package in the image and its corresponding package version, separated by a tab.
    * - Data format
-     - ``<package_name> <version>``
+     - ``<package_name>  <version>``
+   * - Use Cases
+     - Manifests help to quickly verify the contents of an image, allowing users to see which packages and versions are included.
+       This is particularly useful for auditing, debugging, and ensuring that the correct package versions are present in a given image.
+       Some example use cases include:
+
+       - Checking if a given image has a package with a specific patch or security fix applied.
+       - Use the `mkdiff tool <https://launchpad.net/~cloud-images-release-managers/cloud-images/+git/mfdiff>`_ to compare two
+         manifests and see what packages have changed between two image versions.
    * - Example
      - 
         .. code-block:: text
 
-            adduser    3.137ubuntu1
-            apparmor    4.0.0-beta3-0ubuntu3
-            apport    2.28.1-0ubuntu3
-            apport-core-dump-handler    2.28.1-0ubuntu3
-            apport-symptoms    0.25
-            appstream    1.0.2-1build6
-            apt    2.7.14build2
+            adduser	3.153ubuntu1
+            apparmor	5.0.1-0ubuntu1
+            apport	2.35.0-0ubuntu1
+            apport-core-dump-handler	2.35.0-0ubuntu1
+            apt	3.2.0
+
             ...
 
 .. _`Simplestreams`: https://canonical-simplestreams.readthedocs-hosted.com/en/latest/
