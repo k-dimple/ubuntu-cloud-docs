@@ -15,10 +15,59 @@ What are base and minimal images?
 ---------------------------------
 
 Base images are those that are directly derived from Ubuntu Server-like images
-and are meant for general consumption. On the other hand, minimal or minimized
-images are those that are meant for machine-to-machine interactions, and have
-some niceties meant for humans stripped out (such as manpages, translations,
-editors, etc.). A great example would be our k8s images.
+and are meant for general consumption.
+
+Minimal images are designed for automated deployment at scale and made available across a range of cloud substrates.
+They use the optimised kernels and optimised boot process on their target compute substrate. These images have a
+greatly reduced default package set, without many convenience tools for interactive usage. They are much smaller, boot
+faster, and will require fewer security updates over time since they have fewer packages installed.
+
+Minimal instances are not intended to be comfortable to use at the command line, but you can apt-get and snap install
+anything as usual. The 'unminimize' command will install the standard Ubuntu Server packages if you want to convert a
+Minimal instance to a standard Server environment for interactive use.
+
+Since they retain full support for installing from the Ubuntu archive, Minimal Ubuntu images have access to the same
+breadth of software, and the same excellent security maintenance, as the base server images. Combined with full Snap
+support, anything you can do with base Ubuntu images, you can do with minimal images.
+
+Enterprise support is available for Minimal Ubuntu images in the form of Canonical's Ubuntu Pro on the same terms as
+base Ubuntu cloud images.
+
+Where can I find Minimal Ubuntu?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Downloads**
+
+Generic Minimal Ubuntu images for each Ubuntu Release (e.g. 24.04 Noble Numbat) that have not been customized for a
+specific cloud are available for direct download as Daily and Release builds at
+`<https://cloud-images.ubuntu.com/minimal/>`_.
+
+`Daily builds <https://cloud-images.ubuntu.com/minimal/daily/>`_ are not tested and are made available as-is for
+preview.
+
+Once daily builds have been checked for nontrivial package upgrades and have undergone comprehensive testing, they are
+published as `Release builds <https://cloud-images.ubuntu.com/minimal/releases/>`_.
+
+**LXD**
+
+Minimal Ubuntu LXD images can be added and launched directly from the cli:
+
+.. code-block:: bash
+
+    lxc remote add --protocol simplestreams ubuntu-minimal https://cloud-images.ubuntu.com/minimal/releases/
+    lxc launch ubuntu-minimal:noble
+
+
+**Public Clouds**
+
+Minimal Ubuntu images which have been customized for a specific cloud are each available for download or launch via
+the corresponding cloud service. You can find instructions for how to locate official Ubuntu images elsewhere in this
+documentation:
+
+* `Amazon Web Services <https://ubuntu.com/aws/docs/aws-how-to/instances/find-ubuntu-images>`_
+* `Google Compute Engine <https://ubuntu.com/gcp/docs/google-how-to/gce/find-ubuntu-images>`_
+* `IBM Cloud <https://ubuntu.com/docs/ibm/ibm-how-to/find-ubuntu-images>`_
+* `Oracle Cloud Infrastructure <https://ubuntu.com/docs/oracle/oracle-how-to/find-ubuntu-images>`_
 
 
 State of minimal images from Mantic onwards
